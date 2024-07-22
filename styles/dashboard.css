@@ -64,13 +64,16 @@ main {
   position: absolute;
   top: 30px;
   right: 10px;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.9);
   color: white;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  width: 200px;
+  width: 220px;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(-10px);
+  opacity: 0;
 }
 
 .insight-tooltip ul {
@@ -81,10 +84,22 @@ main {
 
 .insight-tooltip ul li {
   margin: 5px 0;
+  position: relative;
+  padding-left: 15px;
 }
 
-.insight-icon:hover + .insight-tooltip {
+.insight-tooltip ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff7500;
+}
+
+.insight-icon:hover + .insight-tooltip,
+.insight-tooltip:hover {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 #chart5 {
   position: relative; /* Ensure the container is positioned relative for absolute positioning of buttons */
@@ -120,4 +135,8 @@ main {
 #chart5-buttons button.unselected-button {
   background-color: #f0f0f0; /* Background color for unselected state */
   color: #333; /* Text color for unselected state */
+}
+
+.insight-tooltip ul li:hover {
+  background-color: #ff7500;
 }

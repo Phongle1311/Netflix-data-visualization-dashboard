@@ -115,7 +115,7 @@ function createChart2(data) {
 
   // Add legend inside the donut, centered and below the text
   const legend = svg.append("g")
-    .attr("transform", `translate(0, 20)`); // Center horizontally, adjust vertical position
+    .attr("transform", `translate(10, 10)`); // Center horizontally, adjust vertical position
 
   legend.selectAll("rect")
     .data(pieData)

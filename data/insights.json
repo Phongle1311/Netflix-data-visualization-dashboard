@@ -1,31 +1,29 @@
 {
-  "chart1": [
+    "chart1": [
       "Netflix is widely popular across many countries around the world.",
       "It is especially popular in the Americas and Europe.",
       "The Middle East and Africa have relatively less coverage."
-  ],
-  "chart2": [
+    ],
+    "chart2": [
       "The number of Movies is more than twice that of TV Shows."
-  ],
-  "chart3": [
+    ],
+    "chart3": [
       "The United States has the most content on Netflix, with a significant lead over other countries.",
       "India and the United Kingdom follow with the next highest amounts of content."
-  ],
-  "chart4": [
+    ],
+    "chart4": [
       "Countries show varying ratios of Movies to TV Shows.",
       "Most countries have a higher number of Movies.",
       "The UK, Japan, and South Korea have a greater number of TV Shows."
-  ],
-  "chart5": [
+    ],
+    "chart5": [
       "The average duration of Movies is 90 minutes.",
       "Very few Movies exceed 200 minutes in length.",
-      "There is a notable number of Movies around 25 minutes, which are typically children’s cartoons.",
-      "TV Shows often consist of only one season."
-  ],
-  "chart6": [
-      "Countries tend to focus on the Mature audience group.",
-      "There are differences in target age groups among countries, with India concentrating more on Teens.",
-      "Spain and Mexico have a significant focus on the Mature group (> 70%).",
-      "The USA and the UK have similar distribution patterns."
-  ]
-}
+      "There is a notable number of TV Shows with multiple seasons.",
+      "TV Shows with 1-2 seasons are the most common."
+    ],
+    "chart6": [
+      "The United States has the highest diversity in age group ratings for content.",
+      "Many countries primarily have content rated for general audiences."
+    ]
+  }
