@@ -1,0 +1,30 @@
+#heatmap .axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+#heatmap .tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+#heatmap .heatmap-rect {
+  stroke-width: 1px;
+  stroke: white;
+}
+#heatmap .color-legend rect {
+  stroke-width: 1px;
+  stroke: #000;
+}
+#heatmap .age-group-legend {
+  font-size: 12px;
+  text-anchor: end;
+}
+#heatmap #color {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 16px;
+}

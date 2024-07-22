@@ -1,0 +1,123 @@
+/* Existing styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #ff7500;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header img {
+  height: 50px;
+  margin-right: 20px;
+}
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+header .info {
+  margin-left: auto;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+header .info span {
+  margin-left: 20px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-template-rows: repeat(2, 1fr); /* Two rows */
+  gap: 20px; /* Margin between charts */
+  padding: 20px;
+  height: calc(100vh - 80px); /* Subtract header height */
+  box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+.chart {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Full width of grid cell */
+  height: 100%; /* Full height of grid cell */
+  box-sizing: border-box; /* Ensure padding is included in width and height calculation */
+}
+
+.insight-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.insight-tooltip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 200px;
+}
+
+.insight-tooltip ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.insight-tooltip ul li {
+  margin: 5px 0;
+}
+
+.insight-icon:hover + .insight-tooltip {
+  display: block;
+}
+#chart5 {
+  position: relative; /* Ensure the container is positioned relative for absolute positioning of buttons */
+  width: 100%; /* Ensure the container takes up full width */
+  height: 100%; /* Ensure the container takes up full height */
+}
+
+#chart5-buttons {
+  position: absolute; /* Position the buttons absolutely within the container */
+  top: 10px; /* Space from the top */
+  right: 30px; /* Space from the right */
+  z-index: 10; /* Ensure buttons are on top of other elements */
+}
+
+#chart5-buttons button {
+  margin: 0 5px; /* Space between buttons */
+  padding: 4px 8px; /* Smaller padding for smaller buttons */
+  font-size: 12px; /* Smaller font size */
+  border: 1px solid #ccc; /* Border color for buttons */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  background-color: #f0f0f0; /* Background color for default state */
+  color: #333; /* Text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+#chart5-buttons button.selected-button {
+  background-color: #B20710; /* Color for selected state */
+  color: white; /* Text color for selected state */
+  border: 1px solid #B20710; /* Border color for selected state */
+}
+
+#chart5-buttons button.unselected-button {
+  background-color: #f0f0f0; /* Background color for unselected state */
+  color: #333; /* Text color for unselected state */
+}
